@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+
+
+
 #Parks {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff;
@@ -28,3 +37,69 @@
     padding: 10px;
     border-radius: 5px;
 }   
+#hero-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    background-color: #007F5C;
+    height: 75px;
+    align-items: center;
+    width: 100%;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    justify-self: center;
+    height: 100%;
+}
+.nav-links a:hover {    background-color: #333;
+    color: #fff;
+    height: 100%;
+}   
+
+.button-box {
+    text-align: center;
+    margin-top: 20px;
+   
+}.button-box button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-box button:hover {
+    background-color: #555;
+
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+footer {
+    background-color: #007F5C;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
