@@ -4,8 +4,13 @@
     padding: 0; 
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
-
+h1, h2, h3, nav {
+    font-family: 'Montserrat', sans-serif;
+}
 
 #Parks {
     font-family: 'Arial', sans-serif;
@@ -172,4 +177,71 @@ main {
 #footer-text-right {
     float: right;
     margin-right: 20px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #333;
+}
+
+.explore-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    /* overrides the grid set on main in the existing CSS */
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+}
+
+.site-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border: 1px solid #D6C599;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f0f8ff;
+}
+
+.site-card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 140px;
+}
+
+.site-card-left img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #ccc;
+}
+
+.site-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #2D6A4F;
+    margin-top: 8px;
+    font-size: 0.95rem;
+}
+
+.site-location {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 4px;
+}
+
+.site-description {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex: 1;
+    align-self: center;
 }
